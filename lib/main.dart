@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/screens/les_53.medals/les_53.medals.dart';
-import 'package:untitled1/screens/les_54/les54_layouts.dart';
-import 'package:untitled1/screens/noble_gases/widgets/nobel_gases_ribbon.dart';
-import 'package:untitled1/screens/noble_gases/widgets/noble_gases_screen.dart';
-import 'package:untitled1/screens/olympics2022.dart';
+import 'package:untitled1/i_layout/my_buttons.dart';
+import 'package:untitled1/screens/less61/scrolling_screen.dart';
 import 'package:untitled1/screens/settings.dart';
+
+import 'i_layout/my_stack.dart';
 
 
 void main() {
-  runApp(const Exampless());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -17,7 +16,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: MedalStandingsIcons(), // подключаем свои виджеты к home
+      home: Scaffold(
+        body: myButtons(),
+      ), // подключаем свои виджеты к home
     );
 
   }

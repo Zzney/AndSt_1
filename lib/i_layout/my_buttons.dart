@@ -16,7 +16,7 @@ class myButtons extends StatelessWidget {
                 print('ElevatedButton');
               },
               onLongPress: () {
-                print('впишите сюда название кнопкиlong press');
+                print('Long press');
               },
               child: Text('ElevatedButton')),
           OutlinedButton(

@@ -16,9 +16,13 @@ class _myInkWellState extends State<myInkWell> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Container(color: Colors.green[300])),
+          Expanded(child: Container(color: Colors.grey[300])),
           Expanded(
               child: InkWell(
+                highlightColor: Colors.red,
+                hoverColor: Colors.blueAccent,
+                splashColor: Colors.yellow,
+                radius: 50,
                 onTap: (){
                   setState(
                         () {
@@ -38,7 +42,7 @@ class _myInkWellState extends State<myInkWell> {
                   ),
                 ),
               )),
-          Expanded(child: Container(color: Colors.green[300])),
+          Expanded(child: Container(color: Colors.grey[300])),
         ],
       ),
     );
